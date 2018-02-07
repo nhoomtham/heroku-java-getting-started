@@ -1,0 +1,14 @@
+@startuml
+
+package "App Group" {
+HTTP - [Main Component]
+rPC - [Caller Component]
+}
+
+package "File Groups" {
+FTP - [FileProcessor Component]
+
+[Main Component] --> FTP
+}
+
+@enduml
